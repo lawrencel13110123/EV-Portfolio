@@ -1,0 +1,73 @@
+<div class="row">
+	<nav class="navbar navbar-default" style="float:right;">
+	  <div class="container-fluid">
+	    <ul class="nav navbar-nav">
+	      <li id="exit-info"><a href="/#portfolio-page">X</a></li>
+	    </ul>
+	  </div>
+	</nav>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div>
+				{{#each project}}
+					<h1>{{title}}</h1>
+					<p>{{breaklines about}}</p>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="img-container">
+{{#each project}}
+
+	{{#if imgOne}}
+	<div class="row">
+		<div class="col-lg-6">
+			<img src={{imgOne}} class="info-img-r">
+		</div>
+	</div>
+	{{/if}}
+
+	{{#if imgTwo}}
+	<div class="row">
+		<div class="col-lg-6 col-lg-push-6">
+			<img src={{imgTwo}} class="info-img-l">
+		</div>
+	</div>
+	{{/if}}
+
+	{{#if imgThree}}
+	<div class="row">
+		<div class="col-lg-6">
+			<img src={{imgThree}} class="info-img-r">
+		</div>
+	</div>
+	{{/if}}
+
+	{{#if imgFour}}
+	<div class="row">
+		<div class="col-lg-6 col-lg-push-6">
+			<img src={{imgFour}} class="info-img-l">
+		</div>
+	</div>
+	{{/if}}
+	
+	{{#if imgFive}}
+	<div class="row">
+		<div class="col-lg-6">
+			<img src={{imgFive}} class="info-img-r">
+		</div>
+	</div>
+	{{/if}}
+
+{{/each}}
+</div>
+
+<footer class="text-center">
+  <p>&copy 2017, Evonne Xu. All Rights Reserved.<br>Powered by Lawrence Liu Web Design.</p>
+</footer>
